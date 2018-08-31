@@ -9,8 +9,8 @@ class Triangle
 
   def kind
     notTriangle1 = @side2 + @side3 - @side1
-    triangle2 = @side1 + @side3 - @side2
-    triangle3 = @side1 + @side2 - @side3
+    notTriangle2 = @side1 + @side3 - @side2
+    notTriangle3 = @side1 + @side2 - @side3
 
     if notTriangle1 <= 0 || notTrangle2 <= 0 || notTriangle3 <= 0 || @side1 <= 0 || @side2 <= 0 || @side3 <= 0
       raise TriangleError, "This is not a valid triangle!"
